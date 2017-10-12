@@ -1,0 +1,115 @@
+<?php
+
+include("db.php");
+?>
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///D:/bootstrap-3.3.7-dist/index.html# -->
+<html>
+<head>
+<title>Add Book</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width" ,inital-scale="1.0&quot;">
+	<title>Contact Page</title>
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+	
+</head>
+
+<body>
+
+
+<div class="main">
+	<div class="nav">
+		<div class="nav-menu elib"><i>eLibrary</i></div>
+		<div class="nav-menu"><a href="home.php">Home</a></div>
+		<<div class="nav-menu"><a href="add.php">Add Book</a></div>
+		<div class="nav-menu"> href="view.php">View Book</a></div>
+		<div class="nav-menu"> href="issue.php">Issue Book</div>
+		<div class="nav-menu"> href="view_issue.php">View Issued Book</div>
+		<div class="nav-menu"> href="return.php">Return Book</div>
+		<div class="nav-menu">Logout</div>
+	</div>
+	<div class="clear"></div>
+	<h2 class="elib">Add Book Form</h2>
+	<div class="main-cntnt">
+		<div class="main-cntnt-inner"><h2><u></u></h2>
+		<form method="post" action="add.php" role="">
+			<ul>
+				<li>Book Id</li>
+				<li><input type="text" name="b_id" value="" ></li>
+				<div class="clear"></div>
+				<li>Name</li>
+				<li><input type="text" name="b_name" id="pass"></li>
+				<div class="clear"></div>
+				<li>Author</li>
+				<li><input type="text" name="b_author" value=""></li>
+				<div class="clear"></div>
+				<li>Publisher</li>
+				<li><input type="text" name="b_publisher" value=""></li>
+				<div class="clear"></div>
+				<li>Quantity</li>
+				<li><input type="text" name="b_quantity" value=""></li>
+				<div class="clear"></div>
+				<li>Available</li>
+				<li><input type="text" name="b_available" value=""></li>
+				<div class="clear"></div>
+
+				<li><input type="submit" name="save_book" class="button" value="Save Book"/></li>
+			</ul>
+			</form>
+		</div>
+
+
+	
+
+	
+  
+  
+</form>
+	</div>
+	</div>
+	</div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>
+
+
+<?php
+	//inserting data using php
+  
+	if(isset($_POST['save_book'])){
+		
+		
+		
+	 
+		$b_id = $_POST['b_id'];
+		
+		
+		$b_name = $_POST['b_name'];
+		$b_author = $_POST['b_author'];
+		$b_publisher = $_POST['b_publisher'];
+		$b_quantity = $_POST['b_quantity'];
+		$b_available = $_POST['b_available'];
+		
+		
+		
+		$insert_book = "insert into add_book (id,book_name,book_author,book_publisher,book_quantity,book_available) values ('$b_id','$b_name','$b_author','$b_publisher','$b_quantity','$b_available')";
+		
+		//to execute the query
+		$insert_pro = mysqli_query($con, $insert_book);
+		//two parameters are 1.connection variable and second is the query we like to fire
+				
+	}
+?>
+
+
+

@@ -1,0 +1,78 @@
+.main{
+	width: 100%;
+	margin: auto;
+}
+.nav{
+	width: 100%;
+	height: 50px;
+	background: black;
+	text-decoration-style: none;
+}
+.nav-menu{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	float: left;
+	padding: 13px 30px 30px 30px; 
+}
+.elib{
+	font-size: 30px;
+}
+.nav-menu a{
+	text-decoration:none;
+	color: white;
+}
+.main-cntnt{
+	width: 1000px;
+	margin: auto;
+}
+.main-cntnt-inner{
+	width: 500px;
+	float: left;
+	margin:auto;
+
+}
+.main-cntnt-inner ul li{
+	list-style-type: none;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.clear{
+	clear: both;
+}
+.button{
+	width: 70px;
+	padding: 5px 0px 5px 0px;
+	color: white;
+	font-size: 16px;
+	background: black;
+}
+.table{
+	font-weight: bold;
+	/*text-decoration:underline;*/
+	font-size: 20px; 
+}
+.center{
+	margin-left: 300px;  
+}
+.lib-button
+{
+    padding-top:35px;
+    font-family: "TW Cen MT";
+    font-size: 30px;
+    border: none;
+	width:09em;
+    height: 03em;
+    margin-top: 65px;
+	margin-left:77px;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    /*background: rgba(255,255,255,.4);*/
+    background: black;
+    transition: ease-out .1s;
+    border-radius: 10px;
+    color: white;
+    float: left;
+    text-align: center;
+    margin-left: 150px;
+}
